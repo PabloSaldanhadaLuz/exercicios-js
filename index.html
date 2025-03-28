@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Modelagem Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Avaliação da Prática de Modelagem Matemática</h2>       
+        <label>Grupo:</label> <input class="input-text" type="text" id="grupo"><br>
+        <label>Tema:</label> <input class="input-text" type="text" id="tema"><br>
+        <label>Estudantes:</label> <input class="input-text" type="text" id="estudantes"><br>
+        
+        <h3 class="title-2">Etapas de Avaliação</h3>
+        
+        <div id="etapas"></div>
+        
+        <h3>Observações:</h3>
+        <textarea rows="4"></textarea>
+        <div class="coontainer-button">
+            <button onclick="calcularModa()">Calcular Conceito Final</button>
+            <button onclick="salvarAvaliacaoManual()">Salvar Avaliação</button>
+            <button onclick="verAvaliacoes()">Ver Avaliações Salvas</button>
+            <button onclick="limparAvaliacoes()">Limpar Avaliações</button>
+        </div>
+        <p class="conceito-final">Sujestão de Conceito Final: <b><span id="conceito-final"></span></b></p>
+        <div id="avaliacoes-salvas"></div>
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
